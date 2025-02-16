@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import styles from './nav.module.css'
 import Image from 'next/image'
-import Logo from '../assets/jasperssaviorslogo.png'
+import Logo from '../assets/jasperssaviorslogo2.png'
 const Navbar = () => {
     return (
         <div className='navbar p-3 m-3 position-static'>
