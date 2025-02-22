@@ -14,3 +14,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+h1{
+  font-size: xx-large;
+  font-weight: 600;
+}
+
+h2{
+  font-size:x-large;
+  font-weight: 600;
+}
