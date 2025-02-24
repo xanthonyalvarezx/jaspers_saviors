@@ -15,12 +15,27 @@ body {
   background-size: cover;
 }
 
-h1{
+h1 {
   font-size: xx-large;
   font-weight: 600;
 }
-
-h2{
-  font-size:x-large;
+h2 {
+  font-size: x-large;
+  font-weight: 600;
+}
+h3 {
+  font-size: large;
+  font-weight: 600;
+}
+h4 {
+  font-size: medium;
+  font-weight: 600;
+}
+h5 {
+  font-size: small;
+  font-weight: 600;
+}
+h6 {
+  font-size: x-small;
   font-weight: 600;
 }

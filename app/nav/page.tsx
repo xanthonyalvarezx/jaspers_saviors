@@ -16,9 +16,10 @@ const Navbar = () => {
                         alt="Picture of the author"
                     />
                     <h3><li><Link className={styles.navlink} href='/'>HOME</Link></li></h3>
-                    <h3><li><Link className={styles.navlink} href='/'>DONATE</Link></li></h3>
+                    <h3><li><Link className={styles.navlink} href='/donate'>DONATE</Link></li></h3>
                     <h3><li><Link className={styles.navlink} href='/'>CONTACT</Link></li></h3>
                     <h3><li><Link className={styles.navlink} href='/'>ABOUT JASPERS SAVIORS</Link></li></h3>
+                    <h4><li><Link className={styles.navlink} href='/auth/login'>Login</Link></li></h4>
                 </ul>
             </nav>
         </div>
