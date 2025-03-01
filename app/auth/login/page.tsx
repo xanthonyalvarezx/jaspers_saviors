@@ -1,6 +1,7 @@
 import React from 'react'
 import googleicon from "../../assets/googleicon.svg"
 import Image from 'next/image'
+
 const Login = () => {
     return (
         <div className='flex-col  '>
@@ -12,6 +13,7 @@ const Login = () => {
                         <input className="border-b-2 border-black mt-3" type="text" placeholder='Email' />
                         <input className="border-b-2 border-black mt-3" type="password" placeholder='Password' />
                         <input className="border-b-2 border-black mt-3" type="password" placeholder='Confirm Password' />
+                        <button className='mt-3'>Submit</button>
                     </div>
                     <p className='flex justify-center'>or</p>
                     <p>Sign in with</p>

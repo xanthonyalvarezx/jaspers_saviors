@@ -39,3 +39,9 @@ h6 {
   font-size: x-small;
   font-weight: 600;
 }
+
+button {
+  background-color: #000000;
+  border-radius: 1rem;
+  color: #ffffff;
+}
