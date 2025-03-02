@@ -26,22 +26,25 @@ const Navbar = () => {
                     <h3><li><Link className={styles.navlink} href='/'>CONTACT</Link></li></h3>
                     <h3><li><Link className={styles.navlink} href='/'>ABOUT JASPERS SAVIORS</Link></li></h3>
 
-                    {status === 'authenticated' &&
-                        <div className={styles.user}>
-                            <Image className='rounded-full h-11 w-11'
-                                src={session.user!.image}
-                                width={100}
-                                height={1}
-                                alt="Picture of the author"
-                            />
-                            {session.user!.email}
-                            <Link className={styles.navlink} href='/api/auth/signout'>Sign Out</Link>
-                        </div>}
-                    {status === 'unauthenticated' && <h4> <li><Link className={styles.navlink} href='/api/auth/signin'>Login</Link></li></h4>}
+                    <div className='flex flex-col items-center'>
+                        {status === 'authenticated' &&
+                            <div className={styles.user}>
+                                <Image
+                                    className='rounded-full h-11 w-11'
+                                    src={session.user!.image}
+                                    width={100}
+                                    height={1}
+                                    alt="your profile photo"
+                                />
+                                {session.user!.email}
+                                <Link className={styles.navlink} href='/api/auth/signout'>Sign Out</Link>
+                            </div>}
+                        {status === 'unauthenticated' && <h4><li><Link className={styles.navlink} href='/api/auth/signin'>Login</Link></li></h4>}
+                        {status === 'unauthenticated' && <li><sub className='text-white'>Not registered? <Link className={styles.navlink} href='/auth/register'>sign up here!</Link></sub></li>}
+                    </div>
                 </ul>
             </nav>
         </div >
     )
 }
-
 export default Navbar

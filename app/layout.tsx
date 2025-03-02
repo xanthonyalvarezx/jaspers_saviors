@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./nav/page";
+import Footer from "./nav/footer/page";
 import AuthProvider from "./auth/provider";
 
 
@@ -34,7 +35,11 @@ export default function RootLayout({
           <Navbar />
           {children}
         </AuthProvider>
+        <div className="mt-40 mb-10 py-5 border-t-#717981-800 border-t-4">
+          <Footer />
+        </div>
       </body>
+
     </html>
   );
 }
