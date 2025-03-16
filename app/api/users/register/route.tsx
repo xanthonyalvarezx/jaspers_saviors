@@ -1,15 +1,13 @@
 import { NextRequest, NextResponse } from "next/server";
-import schema from "./schema";
+import schema from "../schema";
 import { prisma } from "@/prisma/client";
 import bcrypt from "bcrypt";
-
-export async function GET(request: NextRequest) {
-    const users = await prisma.user.findMany()
-    return NextResponse.json(users)
-}
-
+// import { useSession } from "next-auth/react"
+// const { data: session } = useSession()
 export async function POST(request: NextRequest) {
+    // const { data: session } = useSession()
     const body = await request.json();
+
     console.log("body", body);
     const validation = schema.safeParse(body)
     if (!validation.success) {
@@ -28,6 +26,7 @@ export async function POST(request: NextRequest) {
         }
     })
     return NextResponse.json({
-        message: "User created successfully"
+        success: "success"
     })
 }
+

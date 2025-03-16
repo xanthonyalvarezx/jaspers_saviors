@@ -46,3 +46,6 @@ button {
   color: #ffffff;
   padding-inline: 0.5rem;
 }
+button:hover {
+  color: #1984d8;
+}

@@ -23,7 +23,7 @@ const Navbar = () => {
                     />
                     <h3><li><Link className={styles.navlink} href='/'>HOME</Link></li></h3>
                     <h3><li><Link className={styles.navlink} href='/donate'>DONATE</Link></li></h3>
-                    <h3><li><Link className={styles.navlink} href='/'>CONTACT</Link></li></h3>
+                    <h3><li><Link className={styles.navlink} href='/contact'>CONTACT</Link></li></h3>
                     <h3><li><Link className={styles.navlink} href='/'>ABOUT JASPERS SAVIORS</Link></li></h3>
 
                     <div className='flex flex-col items-center'>
@@ -39,7 +39,7 @@ const Navbar = () => {
                                 {session.user!.email}
                                 <Link className={styles.navlink} href='/api/auth/signout'>Sign Out</Link>
                             </div>}
-                        {status === 'unauthenticated' && <h4><li><Link className={styles.navlink} href='/api/auth/signin'>Login</Link></li></h4>}
+                        {status === 'unauthenticated' && <h4><li><Link className={styles.navlink} href='/auth/login'>Login</Link></li></h4>}
                         {status === 'unauthenticated' && <li><sub className='text-white'>Not registered? <Link className={styles.navlink} href='/auth/register'>sign up here!</Link></sub></li>}
                     </div>
                 </ul>

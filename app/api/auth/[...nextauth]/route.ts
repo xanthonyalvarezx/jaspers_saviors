@@ -32,7 +32,7 @@ export const authOptions: NextAuthOptions = {
     },
     // Explicitly allow credentials and disable CSRF for custom API requests
     pages: {
-        signIn: "/auth/signin",
+        signIn: "",
     },
     callbacks: {
         async session({ session, token }) {
